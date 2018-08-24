@@ -272,8 +272,8 @@ class AAE():
         plt.title("hide message result")
         plt.imshow(figure)
         filename = 'hide_message_result_%s_%s.png' % (self.result_path, another_result_path)
-        plt.show()
         plt.savefig(os.path.join(self.result_path, filename), dpi=300)
+        plt.show()
         plt.close()
 
 
