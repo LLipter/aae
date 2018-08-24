@@ -32,7 +32,7 @@ def load_fashion_data():
 def load_anime_data():
     from glob import glob
     import cv2
-    file_list = glob('./faces/*.jpg')
+    file_list = glob('./anime/*.jpg')
     num_training_examples = 50000
     num_testing_examples = 1000
     train_images = [cv2.cvtColor(cv2.resize(cv2.imread(path), (64,64)), cv2.COLOR_BGR2RGB) for path in file_list[:num_training_examples]]
