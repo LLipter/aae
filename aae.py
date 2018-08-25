@@ -188,7 +188,7 @@ class AAE():
         self.save_weight(self.result_path)
         with open(os.path.join(self.result_path, 'epoch.txt'), 'w') as file:
             file.truncate()
-            file.write(str(epoch))
+            file.write(str(end))
 
     def sample_images(self, epoch):
         r, c = 5, 5
